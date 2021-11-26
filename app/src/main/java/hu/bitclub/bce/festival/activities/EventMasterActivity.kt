@@ -6,6 +6,10 @@ import hu.bitclub.bce.festival.R
 import hu.bitclub.bce.festival.model.Event
 import hu.bitclub.bce.festival.model.User
 import java.util.*
+import android.content.Intent
+
+
+
 
 class EventMasterActivity : AppCompatActivity() {
 
@@ -15,6 +19,8 @@ class EventMasterActivity : AppCompatActivity() {
 
         onEventsLoaded(createPlaceholderEvents())
 
+        val myIntent = Intent(this, LoginActivity::class.java)
+        startActivity(myIntent)
     }
 
     //TODO ezeket az eventeket felpakolni card-ok formájában a képernyőre (LinearLayout-ba)
