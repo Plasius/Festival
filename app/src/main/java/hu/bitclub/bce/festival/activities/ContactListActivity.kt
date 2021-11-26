@@ -20,6 +20,12 @@ class ContactListActivity : AppCompatActivity() {
 
     }
 
+    //TODO ez a fuggveny fusson le ha ramennek valakinek a nevere a nevjegyzekbol
+    //TODO hivd meg a ProfileViewActivity-t, az intent-nek extraként rakd be a User id-ját
+    private fun launchProfile(){
+
+    }
+
     //amíg nem tudjuk letölteni a saját eventjeinket addig fake eventekkel dolgozunk
     private fun createPlaceholderUsers(): MutableList<User> {
         var users = mutableListOf<User>()

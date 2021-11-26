@@ -7,8 +7,8 @@ import com.google.firebase.auth.FirebaseAuth
 import hu.bitclub.bce.festival.R
 
 class RegisterActivity : AppCompatActivity() {
-    //A register függvény kér egy email-t és egy passwordot, amit az activity_register-ben létrehozott UI elementekből kellene megkapjon
-    //a UI-t úgy kell felépíteni, ahogy a design kéri
+    //TODO A register függvény kér egy email-t és egy passwordot, amit az activity_register-ben létrehozott UI elementekből kellene megkapjon
+    //TODO a UI-t úgy kell felépíteni, ahogy a design kéri
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
