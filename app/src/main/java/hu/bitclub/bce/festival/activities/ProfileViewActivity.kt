@@ -11,11 +11,13 @@ class ProfileViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_view)
 
-        val userId = intent.getIntExtra("user_id", -1)
+        val userEmail = intent.getStringExtra("user_email")
 
-        if (userId == -1){
+        if (userEmail == null){
             Toast.makeText(this, "User profile could not be loaded.", Toast.LENGTH_SHORT).show()
             finish()
+        }else{
+            Toast.makeText(this, "Loaded user with ID:"+userEmail, Toast.LENGTH_SHORT).show()
         }
 
         displayUserInfo(User("mintauser egyelore", "email", "url"))
