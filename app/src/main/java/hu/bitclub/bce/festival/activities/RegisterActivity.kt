@@ -16,13 +16,16 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        register("asdasd@test.com", "123456")
+        FirebaseAuth.getInstance().signOut()
+
+        //register("asdasd@test.com", "123456")
     }
 
     fun register(email: String, password: String) {
         FirebaseAuth.getInstance()
             .createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener { Toast.makeText(this, "register sikeres", Toast.LENGTH_SHORT).show() }
+            .addOnFailureListener { Toast.makeText(this, "register nem sikeres", Toast.LENGTH_SHORT).show()}
     }
 
     fun login_click(view: View) {
