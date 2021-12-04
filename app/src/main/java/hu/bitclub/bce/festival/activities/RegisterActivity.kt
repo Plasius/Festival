@@ -28,7 +28,7 @@ class RegisterActivity : AppCompatActivity() {
             .addOnFailureListener { Toast.makeText(this, "register nem sikeres", Toast.LENGTH_SHORT).show()}
     }
 
-    fun login_click(view: View) {
+    fun register_click(view: View) {
         var pass1 = findViewById<EditText>(R.id.password1EditText)
         var pass2 = findViewById<EditText>(R.id.password2EditText)
         var email = findViewById<EditText>(R.id.emailEditText)
@@ -38,4 +38,6 @@ class RegisterActivity : AppCompatActivity() {
         else {
             Toast.makeText( this,"nem sikerult", Toast.LENGTH_SHORT).show()}
     }
+
+    fun goToLogin_click(view: View) {}
 }
