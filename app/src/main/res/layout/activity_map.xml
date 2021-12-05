@@ -14,16 +14,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
+        android:background="#202124"
         >
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/doge"
+            android:layout_margin="0dp"
             android:contentDescription="Térkép"
-            android:layout_margin="15dp"
-            android:padding="15dp"
-            />
+            android:gravity=''
+            android:padding="0dp"
+            android:src="@drawable/HR_fest_dark_mode" />
 
         <TextView
             android:text="Első szöveg"
